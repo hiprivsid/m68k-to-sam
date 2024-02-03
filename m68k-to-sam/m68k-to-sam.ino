@@ -19,29 +19,29 @@ int const D15 = 24;
 int const RW = 25;
   // Clock 
 int const clockpin = 9;
-  // Addres
-int const addres1 = 27;
-int const addres2 = 28;
-int const addres3 = 29;
-int const addres4 = 30;
-int const addres5 = 31;
-int const addres6 = 32;
-int const addres7 = 33;
-int const addres8 = 34;
-int const addres9 = 35;
-int const addres10 = 36;
-int const addres11 = 37;
-int const addres12 = 38;
-int const addres13 = 39;
-int const addres14 = 40;
-int const addres15 = 41;
-int const addres16 = 42;
-int const addres17 = 43;
-int const addres18 = 44;
-int const addres19 = 45;
-int const addres20 = 46;
-int const addres21 = 47;
-int const addres22 = 48;
+  // address
+int const address1 = 27;
+int const address2 = 28;
+int const address3 = 29;
+int const address4 = 30;
+int const address5 = 31;
+int const address6 = 32;
+int const address7 = 33;
+int const address8 = 34;
+int const address9 = 35;
+int const address10 = 36;
+int const address11 = 37;
+int const address12 = 38;
+int const address13 = 39;
+int const address14 = 40;
+int const address15 = 41;
+int const address16 = 42;
+int const address17 = 43;
+int const address18 = 44;
+int const address19 = 45;
+int const address20 = 46;
+int const address21 = 47;
+int const address22 = 48;
 
 void setup() {
   // Setup soft
@@ -72,61 +72,61 @@ void setup() {
   pinMode(D14, OUTPUT);
   pinMode(D15, OUTPUT);
 
-  // addres space setup
+  // address space setup
   digitalWrite(RW, LOW);
-  pinMode(addres1, INPUT);
-  pinMode(addres2, INPUT);
-  pinMode(addres3, INPUT);
-  pinMode(addres4, INPUT);
-  pinMode(addres5, INPUT);
-  pinMode(addres6, INPUT);
-  pinMode(addres7, INPUT);
-  pinMode(addres8, INPUT);
-  pinMode(addres9, INPUT);
-  pinMode(addres10, INPUT);
-  pinMode(addres11, INPUT);
-  pinMode(addres12, INPUT);
-  pinMode(addres13, INPUT);
-  pinMode(addres14, INPUT);
-  pinMode(addres15, INPUT);
-  pinMode(addres16, INPUT);
-  pinMode(addres17, INPUT);
-  pinMode(addres18, INPUT);
-  pinMode(addres19, INPUT);
-  pinMode(addres20, INPUT);
-  pinMode(addres21, INPUT);
-  pinMode(addres22, INPUT); 
+  pinMode(address1, INPUT);
+  pinMode(address2, INPUT);
+  pinMode(address3, INPUT);
+  pinMode(address4, INPUT);
+  pinMode(address5, INPUT);
+  pinMode(address6, INPUT);
+  pinMode(address7, INPUT);
+  pinMode(address8, INPUT);
+  pinMode(address9, INPUT);
+  pinMode(address10, INPUT);
+  pinMode(address11, INPUT);
+  pinMode(address12, INPUT);
+  pinMode(address13, INPUT);
+  pinMode(address14, INPUT);
+  pinMode(address15, INPUT);
+  pinMode(address16, INPUT);
+  pinMode(address17, INPUT);
+  pinMode(address18, INPUT);
+  pinMode(address19, INPUT);
+  pinMode(address20, INPUT);
+  pinMode(address21, INPUT);
+  pinMode(address22, INPUT); 
 
 
 
   // idk
-  Serial.print("addres pins");
+  Serial.print("address pins");
 
-  // log about addres pins on start
-  Serial.println(digitalRead(addres1));
-  Serial.println(digitalRead(addres2));
-  Serial.println(digitalRead(addres3));
-  Serial.println(digitalRead(addres4));
-  Serial.println(digitalRead(addres5));
-  Serial.println(digitalRead(addres6));
-  Serial.println(digitalRead(addres7));
-  Serial.println(digitalRead(addres8));
-  Serial.println(digitalRead(addres9));
-  Serial.println(digitalRead(addres10));
-  Serial.println(digitalRead(addres11);
-  int reada12 = digitalRead(addres12);
-  int reada13 = digitalRead(addres13);
-  int reada14 = digitalRead(addres14);
-  int reada15 = digitalRead(addres15);
-  int reada16 = digitalRead(addres16);
-  int reada17 = digitalRead(addres17);
-  int reada18 = digitalRead(addres18);
-  int reada19 = digitalRead(addres19);
-  int reada20 = digitalRead(addres20);
-  int reada21 = digitalRead(addres21);
-  int reada22 = digitalRead(addres22);
-  Serial.println();
-};
+  // log about address pins on start
+  int const reada1 = digitalRead(address1);
+  int const reada2 = digitalRead(address2);
+  int const reada3 = digitalRead(address3);
+  int const reada4 = digitalRead(address4);
+  int const reada5 = digitalRead(address5);
+  int const reada6 = digitalRead(address6);
+  int const reada7 = digitalRead(address7);
+  int const reada8 = digitalRead(address8);
+  int const reada9 = digitalRead(address9);
+  int const reada10 = digitalRead(address10);
+  int const reada11 = digitalRead(address11);
+  int const reada12 = digitalRead(address12);
+  int const reada13 = digitalRead(address13);
+  int const reada14 = digitalRead(address14);
+  int const reada15 = digitalRead(address15);
+  int const reada16 = digitalRead(address16);
+  int const reada17 = digitalRead(address17);
+  int const reada18 = digitalRead(address18);
+  int const reada19 = digitalRead(address19);
+  int const reada20 = digitalRead(address20);
+  int const reada21 = digitalRead(address21);
+  int const reada22 = digitalRead(address22);
+  Serial.println(reada1, reada2, reada3, reada4, reada5, reada6, reada7, reada8, reada9, reada10, reada11, reada12, reada13, reada14, reada15, reada16, reada17, reada18, reada19, reada20, reada21, reada22, HEX);
+}
 
 void loop() {
   digitalWrite(clockpin, HIGH);
@@ -134,54 +134,54 @@ void loop() {
   digitalWrite(clockpin, LOW);
 }
 
-int addres_input(){
+int address_input(){
       digitalWrite(RW, LOW);
-      pinMode(addres1, INPUT);
-      pinMode(addres2, INPUT);
-      pinMode(addres3, INPUT);
-      pinMode(addres4, INPUT);
-      pinMode(addres5, INPUT);
-      pinMode(addres6, INPUT);
-      pinMode(addres7, INPUT);
-      pinMode(addres8, INPUT);
-      pinMode(addres9, INPUT);
-      pinMode(addres10, INPUT);
-      pinMode(addres11, INPUT);
-      pinMode(addres12, INPUT);
-      pinMode(addres13, INPUT);
-      pinMode(addres14, INPUT);
-      pinMode(addres15, INPUT);
-      pinMode(addres16, INPUT);
-      pinMode(addres17, INPUT);
-      pinMode(addres18, INPUT);
-      pinMode(addres19, INPUT);
-      pinMode(addres20, INPUT);
-      pinMode(addres21, INPUT);
-      pinMode(addres22, INPUT);
+      pinMode(address1, INPUT);
+      pinMode(address2, INPUT);
+      pinMode(address3, INPUT);
+      pinMode(address4, INPUT);
+      pinMode(address5, INPUT);
+      pinMode(address6, INPUT);
+      pinMode(address7, INPUT);
+      pinMode(address8, INPUT);
+      pinMode(address9, INPUT);
+      pinMode(address10, INPUT);
+      pinMode(address11, INPUT);
+      pinMode(address12, INPUT);
+      pinMode(address13, INPUT);
+      pinMode(address14, INPUT);
+      pinMode(address15, INPUT);
+      pinMode(address16, INPUT);
+      pinMode(address17, INPUT);
+      pinMode(address18, INPUT);
+      pinMode(address19, INPUT);
+      pinMode(address20, INPUT);
+      pinMode(address21, INPUT);
+      pinMode(address22, INPUT);
   }
 
-int addres_output(){
+int address_output(){
       digitalWrite(RW, HIGH);
-      pinMode(addres1, OUTPUT);
-      pinMode(addres2, OUTPUT);
-      pinMode(addres3, OUTPUT);
-      pinMode(addres4, OUTPUT);
-      pinMode(addres5, OUTPUT);
-      pinMode(addres6, OUTPUT);
-      pinMode(addres7, OUTPUT);
-      pinMode(addres8, OUTPUT);
-      pinMode(addres9, OUTPUT);
-      pinMode(addres10, OUTPUT);
-      pinMode(addres11, OUTPUT);
-      pinMode(addres12, OUTPUT);
-      pinMode(addres13, OUTPUT);
-      pinMode(addres14, OUTPUT);
-      pinMode(addres15, OUTPUT);
-      pinMode(addres16, OUTPUT);
-      pinMode(addres17, OUTPUT);
-      pinMode(addres18, OUTPUT);
-      pinMode(addres19, OUTPUT);
-      pinMode(addres20, OUTPUT);
-      pinMode(addres21, OUTPUT);
-      pinMode(addres22, OUTPUT);
+      pinMode(address1, OUTPUT);
+      pinMode(address2, OUTPUT);
+      pinMode(address3, OUTPUT);
+      pinMode(address4, OUTPUT);
+      pinMode(address5, OUTPUT);
+      pinMode(address6, OUTPUT);
+      pinMode(address7, OUTPUT);
+      pinMode(address8, OUTPUT);
+      pinMode(address9, OUTPUT);
+      pinMode(address10, OUTPUT);
+      pinMode(address11, OUTPUT);
+      pinMode(address12, OUTPUT);
+      pinMode(address13, OUTPUT);
+      pinMode(address14, OUTPUT);
+      pinMode(address15, OUTPUT);
+      pinMode(address16, OUTPUT);
+      pinMode(address17, OUTPUT);
+      pinMode(address18, OUTPUT);
+      pinMode(address19, OUTPUT);
+      pinMode(address20, OUTPUT);
+      pinMode(address21, OUTPUT);
+      pinMode(address22, OUTPUT);
   }
