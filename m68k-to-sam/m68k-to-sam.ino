@@ -42,6 +42,7 @@ int const address19 = 45;
 int const address20 = 46;
 int const address21 = 47;
 int const address22 = 48;
+int const address23 = 49;
 
 void setup() {
   // Setup soft
@@ -100,32 +101,34 @@ void setup() {
 
 
   // idk
-  Serial.print("address pins");
+  Serial.print("address: ");
 
   // log about address pins on start
-  int const reada1 = digitalRead(address1);
-  int const reada2 = digitalRead(address2);
-  int const reada3 = digitalRead(address3);
-  int const reada4 = digitalRead(address4);
-  int const reada5 = digitalRead(address5);
-  int const reada6 = digitalRead(address6);
-  int const reada7 = digitalRead(address7);
-  int const reada8 = digitalRead(address8);
-  int const reada9 = digitalRead(address9);
-  int const reada10 = digitalRead(address10);
-  int const reada11 = digitalRead(address11);
-  int const reada12 = digitalRead(address12);
-  int const reada13 = digitalRead(address13);
-  int const reada14 = digitalRead(address14);
-  int const reada15 = digitalRead(address15);
-  int const reada16 = digitalRead(address16);
-  int const reada17 = digitalRead(address17);
-  int const reada18 = digitalRead(address18);
-  int const reada19 = digitalRead(address19);
-  int const reada20 = digitalRead(address20);
-  int const reada21 = digitalRead(address21);
-  int const reada22 = digitalRead(address22);
-  Serial.println(reada1, reada2, reada3, reada4, reada5, reada6, reada7, reada8, reada9, reada10, reada11, reada12, reada13, reada14, reada15, reada16, reada17, reada18, reada19, reada20, reada21, reada22, HEX);
+  int reada1 = digitalRead(address1);
+  int reada2 = digitalRead(address2);
+  int reada3 = digitalRead(address3);
+  int reada4 = digitalRead(address4);
+  int reada5 = digitalRead(address5);
+  int reada6 = digitalRead(address6);
+  int reada7 = digitalRead(address7);
+  int reada8 = digitalRead(address8);
+  int reada9 = digitalRead(address9);
+  int reada10 = digitalRead(address10);
+  int reada11 = digitalRead(address11);
+  int reada12 = digitalRead(address12);
+  int reada13 = digitalRead(address13);
+  int reada14 = digitalRead(address14);
+  int reada15 = digitalRead(address15);
+  int reada16 = digitalRead(address16);
+  int reada17 = digitalRead(address17);
+  int reada18 = digitalRead(address18);
+  int reada19 = digitalRead(address19);
+  int reada20 = digitalRead(address20);
+  int reada21 = digitalRead(address21);
+  int reada22 = digitalRead(address22);
+  int reada23 = digitalRead(address23);
+  int resultreada = reada1+ reada2+ reada3+ reada4+ reada5+ reada6+ reada7+ reada8+ reada9+ reada10+ reada11+ reada12+ reada13+ reada14+ reada15+ reada16+ reada17+ reada18+ reada19+ reada20+ reada21+ reada22;
+  Serial.println(resultreada, HEX);
 }
 
 void loop() {
