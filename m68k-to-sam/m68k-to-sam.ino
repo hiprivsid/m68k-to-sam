@@ -1,48 +1,49 @@
   // Setup cpu pins (m68k)
   // Data
-int const D1 = 2;
-int const D2 = 3;
+int const D0 = 2;
+int const D1 = 3;
+int const D2 = 4;
 int const D3 = 5;
 int const D4 = 6;
 int const D5 = 7;
 int const D6 = 8;
 int const D7 = 13;
-int const D8 = 10;
-int const D9 = 11;
-int const D10 = 12;
-int const D11 = 26;
-int const D12 = 21;
-int const D13 = 22;
-int const D14 = 23;
-int const D15 = 24;
+int const D8 = 11;
+int const D9 = 12;
+int const D10 = 13;
+int const D11 = 27;
+int const D12 = 22;
+int const D13 = 23;
+int const D14 = 24;
+int const D15 = 25;
   // Read/Write
-int const RW = 25;
+int const RW = 26;
   // Clock 
 int const clockpin = 9;
   // address
-int const address1 = 27;
-int const address2 = 28;
-int const address3 = 29;
-int const address4 = 30;
-int const address5 = 31;
-int const address6 = 32;
-int const address7 = 33;
-int const address8 = 34;
-int const address9 = 35;
-int const address10 = 36;
-int const address11 = 37;
-int const address12 = 38;
-int const address13 = 39;
-int const address14 = 40;
-int const address15 = 41;
-int const address16 = 42;
-int const address17 = 43;
-int const address18 = 44;
-int const address19 = 45;
-int const address20 = 46;
-int const address21 = 47;
-int const address22 = 48;
-int const address23 = 49;
+int const address1 = 28;
+int const address2 = 29;
+int const address3 = 30;
+int const address4 = 31;
+int const address5 = 32;
+int const address6 = 33;
+int const address7 = 34;
+int const address8 = 35;
+int const address9 = 36;
+int const address10 = 37;
+int const address11 = 38;
+int const address12 = 39;
+int const address13 = 40;
+int const address14 = 41;
+int const address15 = 42;
+int const address16 = 43;
+int const address17 = 44;
+int const address18 = 45;
+int const address19 = 46;
+int const address20 = 47;
+int const address21 = 48;
+int const address22 = 49;
+int const address23 = 50;
 
 void setup() {
   // Setup soft
@@ -56,7 +57,8 @@ void setup() {
   // Serial
   Serial.begin(9600);
 
-  // Setup Data 
+  // Setup Data
+  pinMode(D0, OUTPUT); 
   pinMode(D1, OUTPUT);
   pinMode(D2, OUTPUT);
   pinMode(D3, OUTPUT);
