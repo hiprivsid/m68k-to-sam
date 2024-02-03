@@ -129,7 +129,7 @@ void setup() {
   int reada21 = digitalRead(address21);
   int reada22 = digitalRead(address22);
   int reada23 = digitalRead(address23);
-  int resultreada = reada1+ reada2+ reada3+ reada4+ reada5+ reada6+ reada7+ reada8+ reada9+ reada10+ reada11+ reada12+ reada13+ reada14+ reada15+ reada16+ reada17+ reada18+ reada19+ reada20+ reada21+ reada22;
+  int resultreada = reada1+ reada2+ reada3+ reada4+ reada5+ reada6+ reada7+ reada8+ reada9+ reada10+ reada11+ reada12+ reada13+ reada14+ reada15+ reada16+ reada17+ reada18+ reada19+ reada20+ reada21+ reada22+ reada23;
   Serial.println(resultreada, HEX);
 }
 
@@ -189,4 +189,31 @@ int address_output(){
       pinMode(address20, OUTPUT);
       pinMode(address21, OUTPUT);
       pinMode(address22, OUTPUT);
+      pinMpde(address23, OUTPUT);
+      // output
+      int reada1 = digitalRead(address1);
+      int reada2 = digitalRead(address2);
+      int reada3 = digitalRead(address3);
+      int reada4 = digitalRead(address4);
+      int reada5 = digitalRead(address5);
+      int reada6 = digitalRead(address6);
+      int reada7 = digitalRead(address7);
+      int reada8 = digitalRead(address8);
+      int reada9 = digitalRead(address9);
+      int reada10 = digitalRead(address10);
+      int reada11 = digitalRead(address11);
+      int reada12 = digitalRead(address12);
+      int reada13 = digitalRead(address13);
+      int reada14 = digitalRead(address14);
+      int reada15 = digitalRead(address15);
+      int reada16 = digitalRead(address16);
+      int reada17 = digitalRead(address17);
+      int reada18 = digitalRead(address18);
+      int reada19 = digitalRead(address19);
+      int reada20 = digitalRead(address20);
+      int reada21 = digitalRead(address21);
+      int reada22 = digitalRead(address22);
+      int reada23 = digitalRead(address23);
+      int resultreada = reada1+ reada2+ reada3+   r reada4+ reada5+ reada6+ reada7+ reada8+ reada9+ reada10+ reada11+ reada12+ reada13+ reada14+ reada15+ reada16+ reada17+ reada18+      reada19+ reada20+ reada21+ reada22+ reada23;
+  Serial.println(resultreada, HEX);
   }
